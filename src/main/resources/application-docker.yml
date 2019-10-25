@@ -1,0 +1,6 @@
+spring:
+  data:
+    mongodb:
+      host: mongo.default.svc.cluster.local
+      port: 27017
+
