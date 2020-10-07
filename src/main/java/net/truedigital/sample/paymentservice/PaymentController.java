@@ -25,5 +25,10 @@ public class PaymentController {
     public void charge(@PathVariable String id) {
         //TODO: to implement
     }
+
+    @PostMapping("/accounts/{id}/sources/{sid}/verify")
+    public void verifySource(@PathVariable String sid) {
+        //TODO: to implement
+    }
 }
 
