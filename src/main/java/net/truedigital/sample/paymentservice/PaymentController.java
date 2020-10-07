@@ -2,6 +2,7 @@ package net.truedigital.sample.paymentservice;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Collections;
@@ -18,6 +19,11 @@ public class PaymentController {
     @GetMapping("/accounts/{id}/sources/{sid}")
     public Source getSource(@PathVariable String sid) {
         return new Source(sid);
+    }
+
+    @PostMapping("/accounts/{id}/charges")
+    public void charge(@PathVariable String id) {
+        //TODO: to implement
     }
 }
 
