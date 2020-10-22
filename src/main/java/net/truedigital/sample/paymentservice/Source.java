@@ -3,6 +3,7 @@ package net.truedigital.sample.paymentservice;
 public class Source {
     private String id;
     private String name;
+    private String type;
 
     public Source(String id) {
         this.id = id;
@@ -11,6 +12,12 @@ public class Source {
     public Source(String id, String name) {
         this.id = id;
         this.name = name;
+    }
+
+    public Source(String id, String name, String type) {
+        this.id = id;
+        this.name = name;
+        this.type = type;
     }
 
     public String getId() {
@@ -28,4 +35,8 @@ public class Source {
     public void setName(String name) {
         this.name = name;
     }
+
+    public String getType() { return type; }
+
+    public void setType(String type) { this.type = type; }
 }
