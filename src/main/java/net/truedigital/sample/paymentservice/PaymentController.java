@@ -15,7 +15,7 @@ public class PaymentController {
 
     @GetMapping("/accounts/{id}/sources/{sid}")
     public Source getSource(@PathVariable String sid) {
-        return new Source(sid);
+        return new Source(sid, name);
     }
 
     @PatchMapping("/accounts/{id}/sources/{sid}")
