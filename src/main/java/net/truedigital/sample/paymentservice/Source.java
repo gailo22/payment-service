@@ -2,6 +2,7 @@ package net.truedigital.sample.paymentservice;
 
 public class Source {
     private String id;
+    private String name;
 
     public Source(String id) {
         this.id = id;
@@ -13,5 +14,13 @@ public class Source {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
