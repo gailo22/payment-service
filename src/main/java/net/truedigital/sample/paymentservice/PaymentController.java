@@ -10,12 +10,12 @@ public class PaymentController {
 
     @GetMapping("/accounts/{id}/payments")
     public List<Payment> getPayment(@PathVariable String id) {
-        return Collections.singletonList(new Payment(id, name));
+        return Collections.singletonList(new Payment(id, "defaultPaymentName"));
     }
 
     @GetMapping("/accounts/{id}/sources/{sid}")
     public Source getSource(@PathVariable String sid) {
-        return new Source(sid, name);
+        return new Source(sid, "defaultSourceName");
     }
 
     @PatchMapping("/accounts/{id}/sources/{sid}")
