@@ -10,8 +10,8 @@ import java.util.List;
 @RestController
 public class PaymentController {
 
-    @GetMapping("/accounts/{id}/sources")
-    public List<Source> getPayment(@PathVariable String id) {
+    @GetMapping("/accounts/{id}/payments")
+    public List<Payment> getPayment(@PathVariable String id) {
         return Collections.singletonList(new Payment(id, name));
     }
 

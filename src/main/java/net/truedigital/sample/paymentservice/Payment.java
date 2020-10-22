@@ -4,6 +4,10 @@ public class Payment {
     private String id;
     private String name;
 
+    Payment(String id) {
+        this.id = id;
+    }
+
     Payment(String id, String name) {
         this.id = id;
         this.name = name;
