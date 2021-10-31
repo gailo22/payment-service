@@ -6,6 +6,7 @@ public class Payment {
     private String id;
     private String name;
     private BigDecimal amount;
+    private BigDecimal discount;
 
     Payment(String id) {
         this.id = id;
@@ -20,6 +21,13 @@ public class Payment {
         this.id = id;
         this.name = name;
         this.amount = amount;
+    }
+    
+    Payment(String id, String name, BigDecimal amount, BigDecimal discount) {
+        this.id = id;
+        this.name = name;
+        this.amount = amount;
+        this.discount = discount;
     }
 
     public String getId() {
@@ -41,4 +49,8 @@ public class Payment {
     public BigDecimal getAmount() { return amount; }
 
     public void setAmount(BigDecimal amount) { this.amount = amount; }
+    
+    public BigDecimal getDiscount() { return discount; }
+
+    public void setDiscount(BigDecimal discount) { this.discount = discount; }
 }
