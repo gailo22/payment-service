@@ -6,6 +6,7 @@ public class Charge {
 
     private String id;
     private BigDecimal amount;
+    private BigDecimal discount;
 
     public Charge(String id) {
         this.id = id;
@@ -14,6 +15,12 @@ public class Charge {
     public Charge(String id, BigDecimal amount) {
         this.id = id;
         this.amount = amount;
+    }
+    
+    public Charge(String id, BigDecimal amount, BigDecimal amount) {
+        this.id = id;
+        this.amount = amount;
+        this.discount = discount;
     }
 
     public String getId() {
@@ -27,4 +34,8 @@ public class Charge {
     public BigDecimal getAmount() { return amount; }
 
     public void setAmount(BigDecimal amount) { this.amount = amount; }
+    
+    public BigDecimal getDiscount() { return discount; }
+
+    public void setDiscount(BigDecimal discount) { this.discount = discount; }
 }
