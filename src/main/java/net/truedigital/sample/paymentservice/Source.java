@@ -4,6 +4,7 @@ public class Source {
     private String id;
     private String name;
     private String type;
+    private String channel;
 
     public Source(String id) {
         this.id = id;
@@ -18,6 +19,13 @@ public class Source {
         this.id = id;
         this.name = name;
         this.type = type;
+    }
+    
+    public Source(String id, String name, String type, String channel) {
+        this.id = id;
+        this.name = name;
+        this.type = type;
+        this.channel = channel;
     }
 
     public String getId() {
@@ -39,4 +47,8 @@ public class Source {
     public String getType() { return type; }
 
     public void setType(String type) { this.type = type; }
+    
+    public String getChannel() { return channel; }
+
+    public void setChannel(String channel) { this.channel = channel; }
 }
