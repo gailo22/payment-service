@@ -18,13 +18,13 @@ public class Charge {
         this.amount = amount;
     }
     
-    public Charge(String id, BigDecimal amount, BigDecimal amount) {
+    public Charge(String id, BigDecimal amount, BigDecimal discount) {
         this.id = id;
         this.amount = amount;
         this.discount = discount;
     }
     
-    public Charge(String id, BigDecimal amount, BigDecimal amount, String partner) {
+    public Charge(String id, BigDecimal amount, BigDecimal discount, String partner) {
         this.id = id;
         this.amount = amount;
         this.discount = discount;
@@ -47,7 +47,7 @@ public class Charge {
 
     public void setDiscount(BigDecimal discount) { this.discount = discount; }
     
-    public BigDecimal getPartner() { return partner; }
+    public String getPartner() { return partner; }
 
-    public void setPartner(BigDecimal partner) { this.partner = partner; }
+    public void setPartner(String partner) { this.partner = partner; }
 }
